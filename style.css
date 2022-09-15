@@ -7,6 +7,10 @@
     border : 1px solid;
 }
 
-.hovered {
+.hovered{
     background-color: black;
 } 
+
+button {
+    margin : 20px;
+}

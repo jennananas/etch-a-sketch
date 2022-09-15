@@ -1,5 +1,4 @@
 const grid = document.querySelector('.grid-container')
-
 function setNewGrid(gridSize){
     grid.style.cssText = `grid-template-columns: repeat(${gridSize}, 1fr); 
                           grid-template-rows: repeat(${gridSize}, 1fr);`;
@@ -20,8 +19,10 @@ function setNewGrid(gridSize){
 
     const pixels = document.querySelectorAll('.grid-element')
     pixels.forEach((pixel) => pixel.addEventListener('mouseover', ()=> {
-    pixel.classList.add('hovered');
+        pixel.classList.add('hovered');
+        pixel.style.backgroundColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
     }))
+
 }
 
 function askSize(){
